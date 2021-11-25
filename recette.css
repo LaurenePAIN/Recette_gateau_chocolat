@@ -1,0 +1,158 @@
+/*backround-color = couleur de fond
+font-family = police d'ecriture
+margin :30px 100px 200px 50px ;  = marge (haut, bas, droite, gauche)
+margin % = marge s'étire avec le curseur 
+padding = marge interne du texte (hauteur, largeur)
+display block = paragraphe utilise toute la ligne
+display inline-block= occupé la place nécessaire plus controlant
+*/
+
+* /*on selectionne tout sur la page html*/{
+    overflow: auto;
+    /*readapte la taille du contenu (ex: debordement)*/
+}
+
+body {
+    background-color: #75695b;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+div.contenu {
+    background-color: rgb(206, 201, 194);
+    margin: 60px 10% 80px 10%;
+    padding: 0px 30px;
+    min-width: 350px;
+    box-shadow: 0 0 15px #000000;
+    overflow: visible;
+}
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 11px;
+    margin-top: 15px;
+}
+
+p.description {
+    text-align: center;
+    max-width: 500px;
+    display: inline-block;
+    font-size: 14px;
+}
+.centre {
+    text-align: center;
+    width: 100%;
+}
+p.categorie {
+    background-color: #969492;
+    color: white; 
+    display: inline-block;
+    margin-top: -15px;
+    padding: 8px 17px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 16px;
+}
+div.categorie {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    overflow: visible;
+}
+
+div.ligne {
+    width: 100px;
+    /*largeur*/
+    height: 1px;
+    /*hauteur*/
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.info {
+    position: relative;
+}
+table.info {
+    position: absolute; 
+    bottom: 0; 
+    width: 100%; 
+    color: white; 
+    background-color: #754E46C0; 
+    height: 80px;
+}
+table.info td {
+    text-align: center;
+    font-size: 12px;
+    vertical-align: top;
+    /*tu aligne  les texte vers le haut */
+}
+table.info th { 
+    font-size: 14px;
+    vertical-align: bottom;
+    /*tu aligne le texte vers le  bas */
+    padding-bottom: 10px;
+}
+img.info {
+    display: block;
+    max-height: 400px;
+    object-fit: cover; 
+    min-height: 200px;
+    background-color: #75695b;
+}
+div.colone {
+    width: 45%;
+    margin-top: 20px;
+}
+div.colone h2{
+    text-align: center;
+    font-size: 17px;
+    text-transform: uppercase; /*maguscule*/
+    border-bottom /*bordure bas*/: 3px  solid #754e46;
+    padding-bottom: 4px;
+}
+div.colone1 {
+    display: inline-block;
+    margin-right: 10%
+}
+div.colone2 {
+    float: right;
+/*affiche toi a droite*/
+}
+
+div.ingredients p {
+    text-align: center;
+    font-size: 14px;
+    border: 2px solid #754e4675;
+    padding: 8px 0; 
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+table.preparation p.numero{
+    background-color: #754e4675;
+    color: white;
+    width: 25px;
+    text-align: center;
+    height: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 4px;
+    box-sizing: border-box;
+/*Garder la  taille du carré idependament du texte 25*25 */ 
+    border-radius: 50% ;
+/*rond (50% effet de bulle)*/
+    margin: 0;
+
+}
+table.preparation td {
+    vertical-align: top;
+
+}
+table.preparation td.preparation_etape {
+    font-size: 14px;
+    padding-left: 8px;
+    padding-bottom: 10px;
+}
+table.preparation tr {
+    height: 40px ;
+}
